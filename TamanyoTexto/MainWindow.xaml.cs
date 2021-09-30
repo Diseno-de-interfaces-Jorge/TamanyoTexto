@@ -25,6 +25,7 @@ namespace TamanyoTexto
             InitializeComponent();
         }
 
+
         private void CambiarTamañoTexto(object sender, RoutedEventArgs e)
         {
             RadioButton radioButton = (RadioButton)sender;
