@@ -17,9 +17,36 @@
                 <DropShadowEffect Direction="200" ShadowDepth="1" BlurRadius="10"/>
             </TextBlock.Effect>
         </TextBlock>
-        <RadioButton Content="Pequeño" HorizontalAlignment="Left" Margin="172,99,0,0" VerticalAlignment="Top" Tag="36" Checked="CambiarTamañoTexto" Grid.Row="1" FontSize="20"/>
-        <RadioButton Content="Mediano" HorizontalAlignment="Left" Margin="390,99,0,0" VerticalAlignment="Top" Tag="48" Checked="CambiarTamañoTexto" Grid.Row="1" IsChecked="True" FontSize="20"/>
-        <RadioButton Content="Grande" HorizontalAlignment="Left" Margin="616,99,0,0" VerticalAlignment="Top" Tag="72" Checked="CambiarTamañoTexto" Grid.Row="1" FontSize="20"/>
+        <RadioButton Content="Pequeño" HorizontalAlignment="Left" Margin="181,107,0,0" VerticalAlignment="Top" Tag="36" Checked="CambiarTamañoTexto" Grid.Row="1" RenderTransformOrigin="1,1">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2" ScaleY="2"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton Content="Mediano" HorizontalAlignment="Left" Margin="390,99,0,0" VerticalAlignment="Top" Tag="48" Checked="CambiarTamañoTexto" Grid.Row="1" IsChecked="True" RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2" ScaleY="2"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton Content="Grande" HorizontalAlignment="Left" Margin="616,99,0,0" VerticalAlignment="Top" Tag="72" Checked="CambiarTamañoTexto" Grid.Row="1" RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2" ScaleY="2"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
 
     </Grid>
 </Window>
